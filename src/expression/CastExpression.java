@@ -1,6 +1,10 @@
 package expression;
 
-import org.eclipse.jdt.core.dom.Type;
+import type.Type;
+/*
+ * CastExpression :
+ * 	'(Type') Expression
+ */
 
 public class CastExpression extends Expression{
 	Type t;

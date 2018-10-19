@@ -13,7 +13,9 @@ public class MarkerAnnotation extends Annotation{
 		// TODO Auto-generated method stub
 		return "@"+typeName.toString();
 	}
-	
+	/*
+	 * modified later
+	 */
 	public float getScore(List<String> keywords){
 		float score = Expression.DEFSCORE;
 		List<String> tokens = ConvertToken.convertToTokens(typeName.toString());
@@ -23,6 +25,7 @@ public class MarkerAnnotation extends Annotation{
 		for(String token : tokens) {
 			if(keywords.contains(token)) {
 				score = Expression.addPrecise(score, WIK);
+				keywords.remove(token);
 			}else {
 				score = Expression.addPrecise(score, -WNIK);
 			}

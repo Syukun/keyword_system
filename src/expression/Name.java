@@ -1,5 +1,5 @@
 package expression;
 
-public abstract class Name extends Expression {
+public abstract class Name extends Expression implements LeftHandSide{
 	
 }

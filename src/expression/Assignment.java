@@ -1,11 +1,22 @@
 package expression;
 
+/*
+ * ASTNode:
+ * Assignment:
+ * 	Expression AssignmentOperator Expression
+ * 
+ * Syntax:
+ * Assignment:
+ * 	LeftHandSide AssignmentOperator Expression
+ */
+
 public class Assignment extends Expression{
-	Expression leftExp;
+	
+	LeftHandSide leftExp;
 	Expression rightExp;
 	AssignmentOperator operator;
 	
-	public Assignment(Expression leftExp,AssignmentOperator operator,Expression rightExp) {
+	public Assignment(LeftHandSide leftExp,AssignmentOperator operator,Expression rightExp) {
 		this.leftExp = leftExp;
 		this.operator = operator;
 		this.rightExp = rightExp;

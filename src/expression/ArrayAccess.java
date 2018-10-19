@@ -1,6 +1,6 @@
 package expression;
 
-public class ArrayAccess extends Expression{
+public class ArrayAccess extends Expression implements LeftHandSide{
 	Expression arrayExp;
 	Expression indexExp;
 	

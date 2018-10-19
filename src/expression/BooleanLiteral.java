@@ -1,5 +1,7 @@
 package expression;
-
+/*
+ * true | false
+ */
 public class BooleanLiteral extends Expression{
 	boolean b;
 	public BooleanLiteral(boolean b) {

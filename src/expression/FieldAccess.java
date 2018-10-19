@@ -1,6 +1,6 @@
 package expression;
 
-public class FieldAccess extends Expression{
+public class FieldAccess extends Expression implements LeftHandSide{
 	Expression exp;
 	SimpleName id;
 	
