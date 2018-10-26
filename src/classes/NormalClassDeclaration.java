@@ -11,7 +11,7 @@ import lexicalStructure.TypeIdentifier;
  */
 public class NormalClassDeclaration extends ClassDeclaration{
 
-	Annotation annotation;
+
 	List<ClassModifierBesidesAnnotation> classModfifiers;
 	TypeIdentifier typeIdentifier;
 	List<TypeParameter> typeParameters;
@@ -21,11 +21,10 @@ public class NormalClassDeclaration extends ClassDeclaration{
 	
 
 
-	public NormalClassDeclaration(Annotation annotation, List<ClassModifierBesidesAnnotation> classModfifiers,
+	public NormalClassDeclaration(List<ClassModifierBesidesAnnotation> classModfifiers,
 			TypeIdentifier typeIdentifier, List<TypeParameter> typeParameters, SuperClass superClass,
 			SuperInterfaces superInterfaces, ClassBody classBody) {
 		super();
-		this.annotation = annotation;
 		this.classModfifiers = classModfifiers;
 		this.typeIdentifier = typeIdentifier;
 		this.typeParameters = typeParameters;
@@ -39,9 +38,6 @@ public class NormalClassDeclaration extends ClassDeclaration{
 	@Override
 	public String toString() {
 		StringBuffer result = new StringBuffer();
-		if(this.annotation != null) {
-			result.append(annotation.toString() + "\n");
-		}
 		if(this.classModfifiers!=null) {
 			for(ClassModifierBesidesAnnotation classModifier:classModfifiers) {
 				result.append(classModfifiers.toString()+" ")

@@ -12,15 +12,13 @@ import names.ModuleName;
  * 		{Annotation}[open] module Identifier{.Identifier} '( {ModuleDirective} '}
  */
 public class ModuleDeclaration {
-	List<Annotation> annotations;
 	static int OPEN=0;
 	ModuleName moduleName;
 	List<ModuleDirective> moduleDirectives;
 	
-	public ModuleDeclaration(List<Annotation> annotations, int oPEN, ModuleName moduleName,
+	public ModuleDeclaration(int oPEN, ModuleName moduleName,
 			List<ModuleDirective> moduleDirectives) {
 		super();
-		this.annotations = annotations;
 		OPEN = oPEN;
 		this.moduleName = moduleName;
 		this.moduleDirectives = moduleDirectives;
@@ -28,11 +26,11 @@ public class ModuleDeclaration {
 	
 	public String toString() {
 		StringBuffer result = new StringBuffer();
-		if(annotions != null) {
-			for(Annotation annotation : annotations) {
-				result.append(annotation.toString() + "/n");
-			}
-		}
+//		if(annotions != null) {
+//			for(Annotation annotation : annotations) {
+//				result.append(annotation.toString() + "/n");
+//			}
+//		}
 		if(OPEN == 1) {
 			result.append("open ");
 		}

@@ -12,7 +12,7 @@ import lexicalStructure.Identifier;
  * 		Annotation
  */
 public class PackageDeclaration {
-	List<Annotation> packageModifiers;
+//	List<Annotation> packageModifiers;
 	List<Identifier> names;
 		
 	
@@ -23,19 +23,19 @@ public class PackageDeclaration {
 
 
 
-	public PackageDeclaration(List<Annotation> packageModifiers, List<Identifier> names) {
-		super();
-		this.packageModifiers = packageModifiers;
-		this.names = names;
-	}
+//	public PackageDeclaration(List<Annotation> packageModifiers, List<Identifier> names) {
+//		super();
+//		this.packageModifiers = packageModifiers;
+//		this.names = names;
+//	}
 	
 	public String toString() {
 		StringBuffer result = new StringBuffer();
-		if(packageModifiers != null) {
-			for(Anotation packageModifier : packageModifiers) {
-				result.append(packageModifier.toString() + "\n");
-			}
-		}
+//		if(packageModifiers != null) {
+//			for(Anotation packageModifier : packageModifiers) {
+//				result.append(packageModifier.toString() + "\n");
+//			}
+//		}
 		result.append("package ");
 		for(Identifier name:names) {
 			result.append(name.toString());

@@ -1,4 +1,7 @@
 package classes;
+
+import type.ClassType;
+
 /*
  * SuperClass :
  * 		extends ClassType
