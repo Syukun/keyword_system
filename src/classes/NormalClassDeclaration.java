@@ -4,6 +4,7 @@ import java.util.List;
 
 
 import lexicalStructure.TypeIdentifier;
+import type.TypeParameter;
 
 /*
  * NormalClassDeclaration:
@@ -40,7 +41,7 @@ public class NormalClassDeclaration extends ClassDeclaration{
 		StringBuffer result = new StringBuffer();
 		if(this.classModfifiers!=null) {
 			for(ClassModifierBesidesAnnotation classModifier:classModfifiers) {
-				result.append(classModfifiers.toString()+" ")
+				result.append(classModfifiers.toString()+" ");
 			}
 		}
 		result.append("class "+this.typeIdentifier.toString()+" ");
