@@ -2,7 +2,6 @@ package classes;
 
 import java.util.List;
 
-
 import lexicalStructure.TypeIdentifier;
 import type.TypeParameter;
 

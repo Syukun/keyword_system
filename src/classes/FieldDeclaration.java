@@ -1,4 +1,7 @@
 package classes;
+
+import java.util.List;
+
 /*
  * FieldDeclaration:
  * 		{FiledModifier} UnannType VariableDeclaratorList
@@ -28,7 +31,7 @@ public class FieldDeclaration extends ClassMemberDeclaration {
 		result.append(unannType.toString());
 		String seperator = "";
 		for(VariableDeclarator variableDeclarator : variableDeclarators) {
-			result.append(seperator + variableDeclarator.toString());]
+			result.append(seperator + variableDeclarator.toString());
 			seperator = ";\n";
 		}
 		return result.toString();
