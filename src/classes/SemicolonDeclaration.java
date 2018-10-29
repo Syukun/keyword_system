@@ -3,7 +3,7 @@ package classes;
  * SemicolonDeclaration:
  * ;
  */
-public class SemicolonDeclaration extends ClassMemberDeclaration {
+public class SemicolonDeclaration extends ClassMemberDeclaration implements MethodBody{
 
 	@Override
 	public String toString() {

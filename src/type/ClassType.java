@@ -1,6 +1,8 @@
 package type;
 
-public abstract class ClassType extends InterfaceType implements ClassOrInterfaceType{
+import classes.ExceptionType;
+
+public abstract class ClassType extends InterfaceType implements ClassOrInterfaceType,ExceptionType{
 
 	public abstract String toString();
 

@@ -32,9 +32,10 @@ public class EnumDeclaration extends ClassDeclaration {
 		}
 		result.append("enum " + typeIdentifier.toString()+ " ");
 		if(superInterfaces != null) {
-			result.append(superInterfaces.toString())
+			result.append(superInterfaces.toString());
 		}
-		return null;
+		result.append(enumbody.toString());
+		return result.toString();
 	}
 
 }

@@ -1,12 +1,13 @@
 package type;
 
+import classes.ExceptionType;
 import lexicalStructure.TypeIdentifier;
 
 /*
  * TypeVariable:
  * 		{Annotation} TypeIndetifier
  */
-public class TypeVariable implements ReferenceType{
+public class TypeVariable implements ReferenceType,ExceptionType{
 	TypeIdentifier typeIdentifier;
 
 	public TypeVariable(TypeIdentifier typeIdentifier) {

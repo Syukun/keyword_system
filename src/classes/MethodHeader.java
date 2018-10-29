@@ -37,7 +37,7 @@ public class MethodHeader {
 		}
 		result.append(result.toString() + " " + methodDeclarator.toString());
 		if(throwsexp != null) {
-			result.append(" " + throwexp.toString());
+			result.append(" " + throwsexp.toString());
 		}
 		return result.toString();
 	}
