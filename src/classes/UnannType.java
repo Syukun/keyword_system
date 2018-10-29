@@ -4,6 +4,6 @@ package classes;
  * 		UnannPrimitiveType
  * 		UnannReferenceType
  */
-public interface UnannType {
+public interface UnannType extends Result{
 	public String toString();
 }
