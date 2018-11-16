@@ -1,13 +1,12 @@
 package expression;
 
+import keywordsystem_methodinvocation.AssignmentOperator;
+
 /*
  * ASTNode:
  * Assignment:
  * 	Expression AssignmentOperator Expression
- * 
- * Syntax:
- * Assignment:
- * 	LeftHandSide AssignmentOperator Expression
+ *
  */
 
 public class Assignment extends Expression{

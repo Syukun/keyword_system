@@ -13,6 +13,11 @@ import type.Type;
 import org.junit.jupiter.api.Test;
 
 import keywordSystem.Label;
+import keywordsystem_methodinvocation.ArrayAccess;
+import keywordsystem_methodinvocation.ArrayCreation_1;
+import keywordsystem_methodinvocation.ArrayCreation_2;
+import keywordsystem_methodinvocation.ArrayInitializer;
+import keywordsystem_methodinvocation.AssignmentOperator;
 
 class GenerateTest {
 

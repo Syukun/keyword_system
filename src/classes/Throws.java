@@ -20,6 +20,7 @@ public class Throws {
 	public String toString() {
 		StringBuffer result = new StringBuffer();
 		result.append("throws ");
+		
 		String seperator = "";
 		for(ExceptionType exceptionType:exceptionTypes) {
 			result.append(seperator + exceptionType.toString());
